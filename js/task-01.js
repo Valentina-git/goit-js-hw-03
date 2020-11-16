@@ -1,5 +1,4 @@
 /** 
-_________________________________________________________________
 
         Задание 1
         
@@ -11,7 +10,7 @@ _________________________________________________________________
         выводит содержимое объекта user в формате ключ: 
         значение используя Object.keys() и for...of*/
 
-/**  const user = {
+  const user = {
      name: 'Mango',
      age: 20,
      hobby: 'html',
@@ -19,6 +18,7 @@ _________________________________________________________________
 };
 user.mood = 'happy';
 user.hobby = 'skydiving';
+user['full time'] = true;
 user.premium = false;
 const keys = Object.keys(user);
 
@@ -26,4 +26,5 @@ for (const key of keys) {
     console.log(key);
     console.log(user[key]);
 }
- */       
+      console.log(user);
+
