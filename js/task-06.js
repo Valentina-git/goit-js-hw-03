@@ -23,18 +23,6 @@ const calculateTotalPrice = function (allProdcuts, productName) {
     }
 };
 
-   // const calculateTotalPrice = function (allProducts, productName) {
-//   let result = 0;
-//   for (let product of allProducts) {
-//     // console.log('object', product);
-//     result += product.price * product.quantity;
-//   }
-//   return result;
-// };
-
-/*
- * Вызовы функции для проверки работоспособности твоей реализации.
- */
 console.log(calculateTotalPrice(products, 'Радар')); // 5200
 
 console.log(calculateTotalPrice(products, 'Дроид')); // 2800
