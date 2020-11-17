@@ -8,27 +8,26 @@
 //содержатся как свойства объекта 
 //в формате "имя": "кол-во задач".
 
-     /**    const findBestEmployee = function (employees) {
-            // твой код
-            const entries = Object.entries(employees);
-            //console.log(entries);
+        const findBestEmployee = function (employees) {
+            
             let max = 0;
             let name = "";
             
-            for (const entrie of entries) {
-                if (max < entrie[1]) {
-                    max = entrie[1];
-                    name = entrie[0];
+            for (const entrie in employees) {
+                //console.log(employees[entrie]);
+                if (max < employees[entrie]) {
+                    max = employees[entrie];
+                    name = entrie;
                 }
             }
             return name;
-        }; */
+        }; 
 
         /*
          * Вызовы функции для проверки работоспособности твоей реализации.
          */
 
-      /**   console.log(
+        console.log(
             findBestEmployee({
                 ann: 29,
                 david: 35,
@@ -52,4 +51,4 @@
                 kiwi: 19,
                 chelsy: 38,
             }),
-        ); */  // lux 
+        );   // lux 

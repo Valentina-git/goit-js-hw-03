@@ -23,8 +23,7 @@ user.premium = false;
 const keys = Object.keys(user);
 
 for (const key of keys) {
-    console.log(key);
-    console.log(user[key]);
+    console.log(key, user[key]);
 }
-      console.log(user);
+    console.log(user);
 

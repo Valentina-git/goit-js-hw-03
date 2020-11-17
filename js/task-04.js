@@ -13,7 +13,6 @@
 
             for (const item in employees) {
                 total += employees[item];
-                console.log('Total:', total);
             }                     
             return total;
         };

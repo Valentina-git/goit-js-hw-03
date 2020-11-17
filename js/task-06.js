@@ -15,8 +15,15 @@ const products = [
 ];
 
 const calculateTotalPrice = function (allProdcuts, productName) {
-   
-    // const calculateTotalPrice = function (allProducts, productName) {
+
+    for (const product of allProdcuts) {
+            if (product.name === productName) {
+                return product.price * product.quantity
+            }
+    }
+};
+
+   // const calculateTotalPrice = function (allProducts, productName) {
 //   let result = 0;
 //   for (let product of allProducts) {
 //     // console.log('object', product);
@@ -24,15 +31,6 @@ const calculateTotalPrice = function (allProdcuts, productName) {
 //   }
 //   return result;
 // };
-
-    for (const product of allProdcuts) {
-        for (let key in product) {
-            if (product[key] === productName) {
-                return product.price * product.quantity
-            }
-        }
-    }
-};
 
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
