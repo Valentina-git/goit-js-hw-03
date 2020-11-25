@@ -7,8 +7,6 @@
 
 
 const countProps = function (obj) {
- // твой код
-    
     const keys = Object.keys(obj);
     return keys.length;
 }; 
